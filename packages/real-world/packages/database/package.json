@@ -1,0 +1,17 @@
+{
+	"name": "@app/database",
+	"version": "0.1.0",
+	"description": "Database migration",
+	"main": "index.js",
+	"author": "Quy <nguyenha.quy19@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"migrate": "export NODE_ENV=development && knex migrate:latest"
+	},
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"knex": "^0.21.0",
+		"pg": "^8.0.3"
+	}
+}
